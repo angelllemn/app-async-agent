@@ -16,6 +16,7 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "@vercel/node": "^5.3.23",
     "express": "^5.1.0"
   },
   "devDependencies": {
