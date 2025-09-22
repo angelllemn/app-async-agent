@@ -1,0 +1,3 @@
+- No poner secretos en el repo.
+- Usar GitHub Environments/Secrets para PREVIEW/STAGING/PROD.
+- Rotación de claves y OIDC desde Actions para cloud.

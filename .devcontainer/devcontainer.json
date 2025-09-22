@@ -1,0 +1,8 @@
+{
+  "name": "async-agent",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "features": {},
+  "postCreateCommand": "npm ci || npm i",
+  "customizations": { "vscode": { "extensions": ["esbenp.prettier-vscode","dbaeumer.vscode-eslint"] } },
+  "forwardPorts": [3000]
+}
