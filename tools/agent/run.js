@@ -12,7 +12,7 @@ fs.writeFileSync(path, `agent touched issue #${issue}\n`, "utf8");
 
 // 3) Lint/test antes de commit
 try { execSync("npm run lint && npm test", { stdio: "inherit" }); }
-catch (e) { console.error("Quality checks failed"); process.exit(1); }
+catch { console.error("Quality checks failed"); process.exit(1); }
 
 // 4) Commit en rama dedicada
 execSync(`git checkout -b agent/issue-${issue} || git checkout agent/issue-${issue}`, { stdio: "inherit" });
